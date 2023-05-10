@@ -1,0 +1,65 @@
+Desenvolver um programa para uma empresa de desenvolvedores.
+
+custo salário dos funcionários
+quanto tempo pra desenvoler
+
+50 reais a hora dev
+80 reias a hora pra arquiteto e engenheiros
+
+cadastros básicos = 4 horas pode ter mais de um
+
+relatorio simples 30 minutos pode ter mais de um
+
+relatorio elaborado 1 hora pode ter mais de um
+
+casos de uso a - um dia de serviço - 8 horas por programador
+
+casos de uso b - dois dias de trabalho - 16 horas por programador
+
+casos de uso c - tres dias de trabalho - 24 horas por programador
+
+arquiteto dedica 20% do tempo do programador.
+
+sistema desktop
+
+se a pessoa quiser uma interface web aumenta em 15% a mais no tempo doq for usado
+se a pessoa quiser uma interface mobile aumenta em 25% a mais no tempo doq for usado
+
+só pode ter um sistema. Não pode ter mais de uma interface
+
+horaDev = tempo * 50;
+horaArq = (float) (tempo * 0.2 * 80);
+totalDevArq = horaDev + horaArq;
+
+System.out.println("O preço das horas do Desenvolvedor é de: " 
+                + horaDev + " e do Arquiteto é de: " + horaArq +
+                " o preço total ficará em: " + totalDevArq);
+
+
+
+if (cadastro == true){
+            horaDev = 50 * 4;
+            horaArq = (float) (4 * 0.2 * 80);
+        }
+        
+if (relatorioSimples == true) {
+            horaDev = (float) (50 * 0.5);
+            horaArq = (float) (0.5 * 0.2 * 80);
+        }
+        
+if (relatorioElaborado == true){
+            horaDev = 50;
+            horaArq = (float) (1 * 0.2 * 80);
+        }
+        
+switch(especial){
+            case 1: horaDev = 50 * 8;
+            horaArq = (float) (8 * 0.2 * 80);
+            break;
+            case 2: horaDev = 50 * 16;
+            horaArq = (float) (16 * 0.2 * 80);
+            break;
+            case 3: horaDev = 50 * 24;
+            horaArq = (float) (24 * 0.2 * 80);
+            break;
+        }
